@@ -4,12 +4,12 @@ public class Main6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        int n = scanner.nextInt();
 
-        while (b != 0) {
-            int c = a & b;
-            a = a ^ b;
-            b = c << 1;
+        while (n != 0) {
+            int c = a & n;
+            a = a ^ n;
+            n = c << 1;
         }
         System.out.println(a);//самое легкое
     }
